@@ -1,10 +1,10 @@
 # Terrain generation with neighbour support
 
-This repo is about the method I use to generate tile-based terrains in the strategy game I'm developing. It's based on a simple idea, but gives quite fine-grained control while allowing terrains to be randomly generated in a natural way.
+This is the method I use to generate tile-based terrains in the strategy game I'm developing. It's based on a simple idea, but gives quite fine-grained control while allowing terrains to be randomly generated in a natural way.
 
-The code been extracted from my game and stripped down to the barebones. As a result it may have ended up being organised in a slightly unexpected way, but it made more sense in the context of my entire project!
+The code here is just a few files that have been taken from my game and stripped down to the barebones. As a result, things may have ended up being organised in a slightly unexpected way, but it made more sense in the context of my entire project!
 
-### Typical methods of terrain generation
+## Typical methods of terrain generation
 Terrain generation is very common in video games. A popular example is the Civilization series, where game maps consist of hexagonal tiles. Each tile has a base terrain such as plains, grassland, desert, tundra, snow, etc.
 
 The most common technique for terrain generation is probably Perlin noise and heightmapping. For my purposes, I wanted a bit more control over factors like which terrain types appear next to each other. Generating maps using cellular automata is also common, and my method is somewhat closer to this. As mentioned, the idea is quite simple, so I'd be very surprised if something similar doesn't already exist. (I haven't personally seen it elsewhere, but I've not searched particularly hard).
