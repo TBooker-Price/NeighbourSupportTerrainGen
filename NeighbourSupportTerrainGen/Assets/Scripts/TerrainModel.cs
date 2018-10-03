@@ -111,7 +111,7 @@ public class TerrainModel : IGraph<Hex>
         {
             choice = LandscapeData.ChooseRandomLandscape();
             support = CalculateSupportFromNeighbours(choice, neighbourLandscapes);
-            choiceAccepted = support >= UnityEngine.Random.Range(0, 61);
+            choiceAccepted = support > UnityEngine.Random.Range(0, 61);
             if (choiceAccepted) break;
         }
 
